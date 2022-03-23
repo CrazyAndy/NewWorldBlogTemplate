@@ -4,97 +4,96 @@
 
 - title: Projects
   topic: projects
-  url: /projects/
+  url: /projects.html
 
 - title: Frontend
   topic: frontend
   url: /categories/frontend/
   subItems:
     - title: React
-      url : react/
+      url : react.html
     - title: ReactNative
-      url: rn/
+      url: rn.html
     - title: Flutter
-      url: flutter/
+      url: flutter.html
     - title: Es6
-      url: es6/
+      url: es6.html
 
 - title: Backend
   topic: backend
   url: /categories/backend/
   subItems:
     - title: Java
-      url : java/
+      url : java.html
     - title: Python
-      url: python/
+      url: python.html
     - title: Ruby
-      url: ruby/
+      url: ruby.html
     - title: Rails
-      url: rails/
+      url: rails.html
 
 - title: Embedded
   topic: embedded
   url: /categories/embedded/
   subItems:
     - title: C
-      url : c/
+      url : c.html
     - title: DigitCircuit
-      url: digit/
+      url: digit.html
     - title: ArtificialCircuit
-      url: artificial/
+      url: artificial.html
     - title: 51
-      url: 51/
+      url: 51.html
     - title: stm32
-      url: stm32/
+      url: stm32.html
 
 - title: Maths
   topic: maths
   url: /categories/maths/
   subItems:
     - title: Algorithm
-      url : algorithm/
+      url : algorithm.html
     - title: DataStructure
-      url: structure/
+      url: structure.html
     - title: LinearAlgebra
-      url: linear/
+      url: linear.html
 
 - title: Idea
   topic: idea
   url: /categories/idea/
   subItems:
     - title: DesignStrategy
-      url : strategy/
+      url : strategy.html
     - title: DDD
-      url: ddd/
+      url: ddd.html
     - title: Cloud
-      url: cloud/
+      url: cloud.html
 
 - title: IT
   topic: it
   url: /categories/it/
   subItems:
     - title: TCP/IP
-      url : tcpip/
+      url : tcpip.html
     - title: Socket
-      url: socket/
+      url: socket.html
     - title: mqtt
-      url: mqtt/
+      url: mqtt.html
     - title: jvm
-      url : jvm/
+      url : jvm.html
     - title: linux
-      url: linux/
+      url: linux.html
     - title: docker
-      url: docker/
+      url: docker.html
     - title: k8s
-      url : k8s/
+      url : k8s.html
     - title: mq
-      url: mq/
+      url: mq.html
     - title: memorycache
-      url: memorycache/
+      url: memorycache.html
     - title: elk
-      url: elk/
+      url: elk.html
     - title: zookeeper
-      url: zookeeper/
+      url: zookeeper.html
     - title: git
-      url: git/
-
+      url: git.html
