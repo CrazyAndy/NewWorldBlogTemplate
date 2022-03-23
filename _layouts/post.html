@@ -1,0 +1,32 @@
+---
+layout: default
+---
+<div class="post-top">
+    <div class="container">
+        <div class="post__info">
+            <h1 class="post__title">That which does not kill us makes us stronger</h1>
+<!--            <div class="post__meta">-->
+<!--                <div class="post__author-image">-->
+<!--                    <img alt="Vanessa Marley" data-cms-original-src="/assets/images/default/andy_icon.jpeg" loading="lazy" src="/assets/images/default/andy_icon.jpeg">-->
+<!--                </div>-->
+<!--                <div class="post__meta-bottom">-->
+<!--                    <div class="post__author">-->
+<!--                        SuperMan-->
+<!--                    </div>-->
+<!--                    <time class="post__date" datetime="">{{post.createtime}}</time>-->
+<!--                </div>-->
+<!--            </div>-->
+            <div class="post-tags">
+                <a class="post-tags__tag" href="#">{{page.categories}}</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- begin post -->
+<div class="container animate">
+    <article class="post">
+        <div class="post__content" data-cms-content-wrapper="/site/_layouts/post.html">
+            {{content}}
+        </div>
+    </article>
+</div>

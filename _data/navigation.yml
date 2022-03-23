@@ -1,0 +1,100 @@
+- title: Home
+  topic: home
+  url: /
+
+- title: Projects
+  topic: projects
+  url: /projects/
+
+- title: Frontend
+  topic: frontend
+  url: /categories/frontend/
+  subItems:
+    - title: React
+      url : react/
+    - title: ReactNative
+      url: rn/
+    - title: Flutter
+      url: flutter/
+    - title: Es6
+      url: es6/
+
+- title: Backend
+  topic: backend
+  url: /categories/backend/
+  subItems:
+    - title: Java
+      url : java/
+    - title: Python
+      url: python/
+    - title: Ruby
+      url: ruby/
+    - title: Rails
+      url: rails/
+
+- title: Embedded
+  topic: embedded
+  url: /categories/embedded/
+  subItems:
+    - title: C
+      url : c/
+    - title: DigitCircuit
+      url: digit/
+    - title: ArtificialCircuit
+      url: artificial/
+    - title: 51
+      url: 51/
+    - title: stm32
+      url: stm32/
+
+- title: Maths
+  topic: maths
+  url: /categories/maths/
+  subItems:
+    - title: Algorithm
+      url : algorithm/
+    - title: DataStructure
+      url: structure/
+    - title: LinearAlgebra
+      url: linear/
+
+- title: Idea
+  topic: idea
+  url: /categories/idea/
+  subItems:
+    - title: DesignStrategy
+      url : strategy/
+    - title: DDD
+      url: ddd/
+    - title: Cloud
+      url: cloud/
+
+- title: IT
+  topic: it
+  url: /categories/it/
+  subItems:
+    - title: TCP/IP
+      url : tcpip/
+    - title: Socket
+      url: socket/
+    - title: mqtt
+      url: mqtt/
+    - title: jvm
+      url : jvm/
+    - title: linux
+      url: linux/
+    - title: docker
+      url: docker/
+    - title: k8s
+      url : k8s/
+    - title: mq
+      url: mq/
+    - title: memorycache
+      url: memorycache/
+    - title: elk
+      url: elk/
+    - title: zookeeper
+      url: zookeeper/
+    - title: git
+      url: git/
+

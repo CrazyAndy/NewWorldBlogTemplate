@@ -1,0 +1,56 @@
+<!-- begin header -->
+<header class="c-header">
+    <div class="container">
+        <div class="row">
+            <div class="c-header__inner">
+                <nav class="main-nav">
+                    <div class="main-nav__box">
+                        <div class="nav__icon-close">
+                            <i class="ion ion-md-close"></i>
+                        </div>
+                        <div class="nav__title">
+                            Menu
+                        </div>
+                        <ul class="nav__list list-reset">
+                            {% for item in site.data.navigation %}
+                                {% assign scope = item.topic|downcase%}
+                                {% assign layout = page.topic|downcase%}
+                                {% if layout == scope %}
+                                    {% assign activeClass = 'active-link'%}
+                                {% else %}
+                                    {% assign activeClass = ''%}
+                                {% endif %}
+                                {% if item.subItems[0] %}
+                                    <li class="nav__item dropdown"><span class="nav__link dropdown-toggle {{activeClass}}">{{item.title}} <i
+                                            class="ion ion-ios-arrow-down arrow-down"></i></span>
+                                        <div class="dropdown-menu">
+                                            {% for entry in item.subItems %}
+                                                <a class="nav__link" href="{{ item.url }}{{entry.url}}">{{ entry.title }}</a>
+                                            {% endfor %}
+                                        </div>
+                                    </li>
+                                {% else %}
+                                    <li class="nav__item"><a class="nav__link {{activeClass}}" href="{{ item.url }}">{{item.title}}</a></li>
+                                {% endif %}
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    <!--bookshop-live name(social-link.jekyll.html) params() context() -->
+                    <div class="social">
+                        <ul class="social__list list-reset">
+                            <li class="social__item"><a aria-label="github icon" class="social__link"
+                                                        href="https://github.com/CrazyAndy" rel="noopener"
+                                                        target="_blank"><i
+                                    class="ion ion-logo-github"></i></a></li>
+                        </ul>
+                    </div>
+                    <!--bookshop-live end-->
+                </nav>
+                <div class="nav-button">
+                    <i class="nav__icon nav__icon-menu ion ion-md-menu"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+<!-- end header -->
