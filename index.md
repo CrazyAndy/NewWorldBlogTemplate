@@ -1,5 +1,4 @@
 ---
-title: Home
-layout: home
-topic: home
+layout: index
+topic: index
 ---

@@ -1,7 +1,3 @@
-name: SuperMan's World
-title: SuperMan's World
-description: SuperMan Say Hi to World
-site_base_url: http://127.0.0.1:4000
-
-#paginate: 6
-#paginatepath: ['reactnative/:num']
+name: Andy Sun's World
+title: Andy Sun's World
+description: Andy Say Hi to World

@@ -1,5 +1,5 @@
 - title: Home
-  topic: home
+  topic: index
   url: /
 
 - title: Projects
@@ -13,11 +13,13 @@
     - title: React
       url : react.html
     - title: ReactNative
-      url: rn.html
+      url: reactnative.html
     - title: Flutter
       url: flutter.html
     - title: Es6
       url: es6.html
+    - title: Others
+      url: front_others.html
 
 - title: Backend
   topic: backend
@@ -97,3 +99,14 @@
       url: zookeeper.html
     - title: git
       url: git.html
+
+- title: English
+  topic: english
+  url: /categories/english/
+  subItems:
+    - title : Grammar
+      url : grammar.html
+    - title: KaiYan
+      url: kaiyan.html
+    - title: Reading
+      url: reading.html

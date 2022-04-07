@@ -1,0 +1,65 @@
+---
+layout: default
+description: the post list is ordered by date asc
+---
+<script src="/assets/js/jquery-2.1.1.min.js"></script>
+<script src="/assets/js/jPages.js"></script>
+<script type="text/javascript">
+    $(function () {
+        /* initiate the plugin */
+        $("div.pag-holder").jPages({
+            containerID: "pag-itemContainer",
+        });
+    });
+</script>
+<div class="c-page">
+    <!--bookshop-live name(page-heading/page-heading.jekyll.html) params(bind=block) context(block=content_blocks[0]) -->
+    <div class="container">
+        <div class="c-page-heading">
+            {% assign category = page.category|downcase %}
+            <h1 class="c-page-heading__title">{{page.title}}</h1>
+            <p class="c-page-heading__description">{{page.description}}</p>
+        </div>
+    </div>
+    <!--bookshop-live end-->
+    <!--bookshop-live name(posts-list/posts-list.jekyll.html) params(bind=block) context(block=content_blocks[1]) -->
+    <div class="container animate">
+        <div id="pag-itemContainer" class="row">
+            {% assign counter = 0 %}
+            {% for post in site.categories[category] reversed%}
+            {% assign counter = counter | plus: 1 %}
+            {% assign imageNum = counter | modulo : 9 %}
+            {% if imageNum==0 %}
+            {% assign imageNum = 9 %}
+            {% endif %}
+            <div class="c-blog-card col col-4 col-d-6 col-t-12">
+                <div class="c-blog-card__inner">
+                    <div class="c-blog-card__image-wrap">
+                        <a class="c-blog-card__image" href="{{post.url}}"> <img
+                                alt="That which does not kill us makes us stronger"
+                                data-cms-original-src="/assets/images/default/post-{{imageNum}}.jpg" loading="lazy"
+                                src="/assets/images/default/post-{{imageNum}}.jpg"> </a>
+                    </div>
+                    <div class="c-blog-card__content">
+                        <h2 class="c-blog-card__title"><a href="{{post.url}}">{{post.title}}</a></h2>
+                        <p class="c-blog-card__excerpt"> {{post.description}} </p>
+                        <div class="c-blog-card__meta">
+                            <div class="c-blog-card__author-image">
+                                <img alt="Andy Sun" data-cms-original-src="/assets/images/default/andy_icon.jpeg"
+                                     loading="lazy" src="/assets/images/default/andy_icon.jpeg">
+                            </div>
+                            <div class="c-blog-card__info">
+                                <div class="c-blog-card__author-name">
+                                    Andy Sun
+                                </div>
+                                <span class="c-blog-card__date"><time>{{post.createtime}}</time></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+        </div>
+    </div>
+    {% include pagination.html %}
+</div>
